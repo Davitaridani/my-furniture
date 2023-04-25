@@ -1,0 +1,25 @@
+@use "global";
+
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+$bgCard : #f8f0e4; 
+
+
+.common-section {
+	background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562)), url("../img/banner-products.jpg") no-repeat center center;
+	background-size: cover;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.container {
+		.title {
+			h2 {
+				font-size: 35px;
+				letter-spacing: 1px;
+				color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+}

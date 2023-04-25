@@ -1,0 +1,166 @@
+@use "global";
+
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+
+
+p {
+	font-weight: 500;
+}
+
+.sect-hero {
+	background: $bgBlue;
+	.container {
+		.row {
+			.hero-content {
+				padding-top: 40px;	
+				p {
+					color: $mainColor;
+					line-height: 25px;
+				}
+				h3 {
+					font-size: 40px;
+					color: $mainColor;
+					margin: 20px 0;
+					font-weight: 600;
+				}
+				.btn-buy {
+					padding: 8px 20px;
+					border: none;
+					border-radius: 5px;
+					background-color: $mainColor;
+					margin-top: 30px;
+					.nav-link {
+						font-size: 17px;
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+			.hero-img {
+				img {
+					animation: shakeY 23s infinite; 
+				}
+			}
+		}
+	}
+}
+
+.sect-2-services {
+	padding: 80px 15px 0 ;
+}
+
+.sect-3-trending-product {
+	padding: 80px 0 0 ;
+}
+
+.sect-4-best-saller {
+	padding: 80px 0 50px;
+}
+
+.sect-5-timer-count {
+	background-color: $mainColor;
+	height: 300px;
+	.container {
+		.items-clock {
+			.btn-buy {
+				background-color: #fff;
+				color: $mainColor;
+				font-weight: 600;
+				padding: 7px 15px;
+			}
+		}
+
+		img {
+			width: 70% !important;
+			height: 70%;
+			object-fit: contain;
+		}
+	}
+}
+
+// Breakpoint
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+// Mobile
+@include responsive(mobile) {
+	.sect-hero {
+		padding-bottom: 70px;
+		padding: 50px 15px;
+		.container {
+			p, a, button {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.4 !important;
+			}
+			.row {
+				flex-wrap: wrap-reverse;
+				.content-banner {
+					padding: 0;
+					.hero-content {
+						padding-top: 40px;	
+						p {
+							font-weight: 500;
+						}
+						h3 {
+							font-size: 30px;
+							margin: 20px 0;
+							font-weight: 600;
+						}
+						.btn-buy {
+							padding: 9px 20px;
+							margin-top: 20px;
+							.nav-link {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+				.hero-img {
+					img {
+						max-width: 90%;
+						display: flex;
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+
+	.sect-2-services,  
+	.sect-3-trending-product,
+	.sect-4-best-saller,
+	.sect-6-new-arrival,
+	.category-popular {
+		padding: 60px 15px 0 ;
+	}
+
+	.sect-5-timer-count {
+		margin: 50px 0;
+	}
+
+	.sect-6-new-arrival {
+		margin-bottom: 0 !important;
+	}
+}

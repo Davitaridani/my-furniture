@@ -1,0 +1,120 @@
+@use "global";
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+
+.footer {
+	padding: 80px 0 15px;
+	background-color: $mainColor;
+	
+	p, span {
+		color: #d4dcdd !important;
+		font-weight: 400;
+	}
+	.container {
+		.row {
+			.title-footer {
+				margin-bottom: 20px;
+				color: #fff;
+				font-size: 20px;
+			}
+			.text-footer {
+				line-height: 30px;
+			}
+			.list-group {
+				.list-group-item {
+					background: transparent !important;
+					a {
+						color: #c9c9c9;
+						span {
+							font-size: 19px;
+							line-height: 0;
+						}
+						p {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.item-copyright {
+				margin-top: 35px;
+				hr {
+					margin: 0;
+				}
+				.text-copyright {
+					margin-top: 20px;
+					font-weight: 600;
+					font-size: 15px;
+					span {
+						line-height: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.footer {
+	padding: 70px 18px 15px;
+	.container {
+		.row {
+			.desc-about-shop,
+			.foot-menu,
+			.foot-link {
+				margin-bottom: 25px;
+			}
+			.title-footer {
+				margin-bottom: 10px;
+				font-size: 17px;
+			}
+			.text-footer {
+				line-height: 1.6;
+				font-size: 14px;
+				margin-bottom: 0;
+				font-weight: 400;
+				color: #e7e7e7;
+			}
+			.list-group {
+				.list-group-item {
+					padding: 4px 0;
+					a {
+						font-size: 14px;
+					}
+				}
+			}
+			.item-copyright {
+				padding: 0;
+				margin-top: 30px;
+					.text-copyright {
+						margin-top: 15px;
+						font-weight: 400;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}

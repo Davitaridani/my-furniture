@@ -1,0 +1,142 @@
+@use "global";
+
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+$bgCard : #f8f0e4; 
+
+h2,h3,h4,h5 {
+	color: $mainColor;
+}
+
+.detail-product {
+	.container {
+		.row {
+			
+			.info-product {
+				margin-top: 80px;
+				h3 {
+					font-size: 25px;
+					margin-bottom: 15px;
+				}
+				.rating-product {
+					span {
+						line-height: 0;
+						svg {
+							color: #ff9f18;
+						} 
+					}
+					.text-rating {
+						p {
+							span {
+								font-weight: 600;
+							}
+							margin-bottom: 0;
+						}
+					}
+				}
+				.product-price {
+					font-size: 20px;
+					font-weight: 500;
+					.text-category {
+						font-weight: 400;
+						font-size: 16px;
+						color: #494949;
+					}
+				}
+				.btn-buy {
+					margin-top: 20px;
+					background-color: $mainColor;
+					padding: 8px 25px;
+					border: 0;
+					color: #fff;
+					font-weight: 500;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+} 
+
+.tab-view {
+	.container {
+		.row {
+			.tab-wrapper {
+				h3 {
+					font-size: 18px;
+					font-weight: 500;
+					cursor: pointer;
+				}
+			}
+			.tab-content {
+				p {
+					line-height: 25px;
+				}
+			}
+			.product-review {
+				.review-wrapper {
+					ul {
+						padding-left: 10px;
+						li {
+							list-style: none;
+							span {
+								color: #ff9f18;
+								font-weight: 600;
+							}
+							p {
+								margin: 5px 0 20px;
+							}
+						}
+					}
+					.form-review {
+						width: 70%;
+						margin: auto;
+						margin-top: 50px;
+						h3 {
+							font-size: 20px;
+							font-weight: 600;
+							margin-bottom: 30px;
+						}
+						form {
+							.form-group {
+								margin-bottom: 25px;
+								span {
+									line-height: 0;
+									display: flex;
+									align-items: center;
+									cursor: pointer;
+									column-gap: 5px;
+									color: #ff9f18;
+								}
+								input, textarea {
+									width: 100%;
+									border: 1px solid $mainColor;
+									border-radius: 5px;
+									padding: 8px 20px;
+									&:focus {
+										outline: none;
+									}
+								}
+							}
+							.btn-review {
+								background-color: $mainColor;
+								padding: 8px 30px;
+								border: 0;
+								color: #fff;
+								font-weight: 600;
+								border-radius: 5px;
+							}
+						}
+					}
+				}
+			}
+			.item-product-kategory {
+				margin-top: 50px;
+				h3 {
+					font-size: 23px;
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

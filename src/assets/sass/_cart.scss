@@ -1,0 +1,50 @@
+@use "global";
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+$bgCard : #f8f0e4;
+
+.sect-1-cart {
+	.container {
+		.row {
+			.table {
+				tr {
+					td {
+						img {
+							padding: 4px ;
+							width: 100px;
+							height: 80px;
+							object-fit: cover;
+						}
+						.btn-delete {
+							text-align: center;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			.info-sub-total {
+				padding-top: 3px;
+				h3 {
+					font-size: 18px;
+					font-weight: 400;
+				}
+				span {
+					font-size: 20px;
+					font-weight: 600;
+				}
+				p {
+					font-size: 15px;
+					font-weight: 400;
+				}
+			}
+			.items-btn {
+				.btn-buy {
+					background-color: $mainColor;
+					color: #fff;
+					padding: 9px 25px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

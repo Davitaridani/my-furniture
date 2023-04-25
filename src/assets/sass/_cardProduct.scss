@@ -1,0 +1,118 @@
+@use  "global";
+$mainColor : #091d2e;
+$bgBlue: #c2e8ef;
+$bgCard : #f8f0e4; 
+
+.items-card-products {
+	margin-bottom: 15px;	
+	.product-item {
+		cursor: pointer;
+		.product-info {
+			height: 80px;
+			margin-bottom: 70px;
+			.title-product {
+				h3 {
+					font-size: 20px;
+					margin-top: 0;
+					font-weight: 600;
+					a {
+						text-decoration: none;
+						color: $mainColor;
+						font-size: 18px;
+						:hover {
+							cursor: inherit;
+						}
+					}
+				}
+				p {
+					font-size: 15px;
+					line-height: 1.4;
+					white-space: nowrap; 
+					overflow: hidden;
+					text-overflow: ellipsis; 
+					// height: 70px;
+				} 
+			}
+			.bottom-card-product {
+				.price-product {
+					color: $mainColor;
+					font-size: 17px;
+					font-weight: 500;
+				}
+				.btn-icon-plus {
+					font-size: 18px;
+					padding: 5px;
+					background-color: $mainColor;
+					color: #fff;
+					line-height: 0;
+					border-radius: 50px;
+				}
+			}
+		}
+	}
+}
+
+// Breakpoint
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.items-card-products {
+		margin-bottom: 0;
+		.product-item {
+			cursor: pointer;
+			.product-info {
+				height: 80px;
+				margin-bottom: 70px;
+				.title-product {
+					h3 {
+						font-size: 20px;
+						margin-top: 0;
+						font-weight: 600;
+						a {
+							font-size: 17.5px;
+						}
+					}
+					p {
+						font-size: 14px;
+					} 
+				}
+				.bottom-card-product {
+					.price-product {
+						color: $mainColor;
+						font-size: 17px;
+						font-weight: 500;
+					}
+					.btn-icon-plus {
+						font-size: 18px;
+						padding: 5px;
+						background-color: $mainColor;
+						color: #fff;
+						line-height: 0;
+						border-radius: 50px;
+					}
+				}
+			}
+		}
+	}
+}
