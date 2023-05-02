@@ -8,7 +8,8 @@ import iconLogo from "../../assets/img/icon-logo.png";
 
 const menu_links = [
   { path: "home", display: "Home" },
-  { path: "shop", display: "Shop" },
+  { path: "about", display: "About" },
+  { path: "shop", display: "Product" },
   { path: "cart", display: "Cart" },
 ];
 
@@ -49,9 +50,6 @@ const HeaderCompt = () => {
             <div className="item-brand d-flex align-items-center">
               <div className="logo">
                 <img src={iconLogo} alt="img-logo" />
-              </div>
-              <div className="navbar-title">
-                <h3>My Shop</h3>
               </div>
             </div>
             <div className="navigation" ref={menuRef} onClick={menuToggle}>

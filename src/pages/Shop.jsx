@@ -3,45 +3,17 @@ import CommonSection from "../components/UI/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import ListProducts from "../components/UI/ListProducts";
-import dataProducts from "../assets/contacts/dataProducts";
-
 import products from "../../src/assets/data/products";
 
 const Shop = () => {
 	const [productsData, setProductsData] = useState(products)
-
-	// const handleFilter = e => {
-	// 	const filterValue = e.target.value
-
-	// 	if (filterValue === "chair") {
-	// 		const filteredProducts = dataProducts.filter(item => item.category === "chair")
-	// 		setProductsData(filteredProducts)
-	// 	} else if (filterValue === "mattress") {
-	// 		const filteredProducts = dataProducts.filter(item => item.category === "mattress")
-	// 		setProductsData(filteredProducts)
-	// 	} else if (filterValue === "sofa") {
-	// 		const filteredProducts = dataProducts.filter(item => item.category === "sofa")
-	// 		setProductsData(filteredProducts)
-	// 	} else if (filterValue === "table") {
-	// 		const filteredProducts = dataProducts.filter(item => item.category === "table")
-	// 		setProductsData(filteredProducts)
-	// 	} else if (filterValue === "wardrobe") {
-	// 		const filteredProducts = dataProducts.filter(item => item.category === "wardrobe")
-	// 		setProductsData(filteredProducts)
-	// 	}
-	// }
-
-
-	console.log(products);
-
 	const handleFilter = e => {
 		const filterValue = e.target.value
-
 		if (filterValue === "chair") {
 			const filteredProducts = products.filter(item => item.category === "chair")
 			setProductsData(filteredProducts)
-		} else if (filterValue === "mobile") {
-			const filteredProducts = products.filter(item => item.category === "mobile")
+		} else if (filterValue === "mattress") {
+			const filteredProducts = products.filter(item => item.category === "mattress")
 			setProductsData(filteredProducts)
 		} else if (filterValue === "sofa") {
 			const filteredProducts = products.filter(item => item.category === "sofa")
@@ -57,12 +29,12 @@ const Shop = () => {
 
 	const handleSearch = e => {
 		const searchValue = e.target.value
-		const searchProducts = dataProducts.filter(item => item.productName.toLowerCase().includes(searchValue.toLowerCase()))
+		const searchProducts = products.filter(item => item.productName.toLowerCase().includes(searchValue.toLowerCase()))
 		setProductsData(searchProducts)
 	}
 
 	return (
-		<Helmet title="Shop">
+		<Helmet title="Product">
 			<CommonSection title="Products" />
 			<div className="shop-products">
 				<Container>
@@ -71,7 +43,7 @@ const Shop = () => {
 							<select onChange={handleFilter}>
 								<option>Filter By Kategory</option>
 								<option value="chair">Chair</option>
-								<option value="mobile">Mattress</option>
+								<option value="mattress">Mattress</option>
 								<option value="sofa">Sofa</option>
 								<option value="table">Table</option>
 								<option value="wardrobe">Wardrobe</option>

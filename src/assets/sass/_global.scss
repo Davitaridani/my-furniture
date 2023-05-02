@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap');
-
 @font-face {
 	font-family: "apercu";
 	src: url("../img/font/font-apercu.woff2");
@@ -10,15 +9,23 @@ $bgBlue: #c2e8ef;
 $bgCard : #f8f0e4;
 $fontApercu: "apercu";
 
-
-
-p, a,  button, span {
+p,   button, span, li {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.4;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+}
+
+.btn-custom {
+	background-color: #39427B;
+	padding: 8px 16px;
 }
 
 h1,h2,h2,h3,h4,h5 {
-	// font-family: 'Poppins', sans-serif;
 	font-family: $fontApercu;
 }
 
@@ -33,4 +40,9 @@ section {
 .text-title {
 	color: $mainColor;
 	font-weight: 600;
+}
+
+::selection {
+	background-color: #39427B;
+	color: #fff;
 }

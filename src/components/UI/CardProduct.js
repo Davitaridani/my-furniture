@@ -28,6 +28,7 @@ const CardProduct = ({ item }) => {
               whileHover={{ scale: 0.9 }}
               src={item.imgUrl}
               alt="detail Products"
+              className="img-fluid"
             />
           </Link>
         </div>
@@ -45,7 +46,7 @@ const CardProduct = ({ item }) => {
               onClick={addToCart}
               className="btn-icon-plus"
             >
-              <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+              <iconify-icon icon="icons8:add-shopping-cart"></iconify-icon>
             </motion.span>
           </div>
         </div>

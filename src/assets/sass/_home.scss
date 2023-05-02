@@ -50,6 +50,65 @@ p {
 	padding: 80px 15px 0 ;
 }
 
+.sect-3 {
+	.container {
+		.wrapper-text {
+			margin-bottom: 50px;
+			h1 {
+				font-size: 30px;
+				font-weight: 300;
+				color: $mainColor;
+				margin-bottom: 15px;
+			}
+			p {
+				margin-bottom: 25px;
+			}
+			a {
+				color: #fff;
+				font-size: 15px;
+			}
+		}
+		.item-card {
+			background-color: #f7f7f7bc;
+			padding: 13px;
+			padding-bottom: 20px;
+			position: relative;
+			.text {
+				width: 55%;
+				h3 {
+					font-size: 25px;
+					font-weight: 400;
+				}
+				p {
+					margin-bottom: 20px;
+				}
+				a {
+					padding: 8px 15px;
+					font-size: 15px;
+					background-color: transparent !important;
+					border: 1px solid #39427B;
+					color: $mainColor;
+				}
+			}
+			img {
+				width: auto;
+				height: 270px;
+				right: 0;
+				bottom: 10px;
+				position: absolute;
+			}
+		}
+		.cards {
+			position: relative;
+			background-color: #f7f7f7bc;
+			img {
+				height: 300px;
+
+			}
+		}
+	}
+}
+
 .sect-3-trending-product {
 	padding: 80px 0 0 ;
 }

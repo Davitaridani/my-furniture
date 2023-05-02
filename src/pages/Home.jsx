@@ -10,6 +10,10 @@ import Services from "../Services/Services";
 import imgCounter from "../assets/img/counter-timer-img.png";
 import Clock from "../components/UI/Clock";
 
+import imgChair from "../assets/img/img-card-1.png";
+import imgSofa from "../assets/img/img-card-2.png";
+import imgSofa2 from "../assets/img/img-card-3.png";
+
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState([]);
   const [bestSallerProduct, setBestSallerProduct] = useState([]);
@@ -61,6 +65,42 @@ const Home = () => {
         <Services />
       </section>
 
+
+      <section className="sect-3">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="5">
+              <div className="wrapper-text">
+
+                <h1>Why are we the best?</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod et aliquam a eveniet odit, ut cum incidunt animi neque aperiam aspernatur, ipsa reiciendis. Dignissimos, optio delectus.</p>
+                <a href="" className="btn-custom">Explore More</a>
+              </div>
+              <div className="item-card d-flex align-items-center">
+                <div className="text">
+                  <h3>Brefing</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, illum, libero possimus.</p>
+                  <a href="" className="btn-custom">Explore More</a>
+                </div>
+                <img src={imgChair} alt="sofa" className="img-fluid" />
+              </div>
+            </Col>
+            <Col md="3">
+              <div className="cards mt-3">
+                <img src={imgSofa} alt="chair" className="img-fluid" />
+                <div className="text text-center">
+                  <h3>Processing</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum.</p>
+                  <a href="" className="btn-custom">Explore More</a>
+                </div>
+              </div>
+            </Col>
+            <Col md="3">
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <section className="sect-3-trending-product">
         <Container>
           <Row>
@@ -101,28 +141,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="sect-6-new-arrival">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h3 className="text-title">New Arrivals</h3>
-            </Col>
-            <ListProducts data={mobileProduct} />
-            <ListProducts data={wirelessProduct} />
-          </Row>
-        </Container>
-      </section>
-
-      <section className="category-popular mb-5">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h3 className="text-title mb-5">Kategori Populer </h3>
-            </Col>
-            <ListProducts data={popularProduct} />
-          </Row>
-        </Container>
-      </section>
+      <section></section>
 
     </Helmet >
   )

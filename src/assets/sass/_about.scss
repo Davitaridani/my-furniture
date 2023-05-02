@@ -1,0 +1,89 @@
+@import "global";
+
+.about {
+	background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562)), url("../img/banner-about.jpg") no-repeat center center;
+	background-size: cover;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.container {
+		.title {
+			h2 {
+				font-size: 35px;
+				letter-spacing: 1px;
+				color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.sect-2 {
+	.container {
+		.wrapper-text {
+			column-gap: 25px;
+			border: 1px solid #f3f3f3;
+			padding: 50px;
+			.quote {
+				margin-bottom: 25px;
+				span {
+					color: #39427B;
+					font-size: 40px;
+				}
+				h1 {
+					line-height: 1;
+					padding: 0 20px;
+					margin-bottom: 0;
+					font-weight: 700;
+					font-size: 33px;
+					color: $mainColor;
+				}
+			}
+			.figure-about {
+				border-top: 4px solid #39427B;
+				img {
+					margin-top: 15px;
+				}
+			}
+			.text-about {
+				h3 {
+					position: relative;
+					font-size: 28px;
+					border-bottom: 3px solid #39427B;
+					color: $mainColor;
+					width: fit-content;
+					padding-bottom: 5px;
+					margin-bottom: 30px;
+				}
+				.desc {
+					p {
+						font-size: 16px;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+
+		.visi-misi {
+			img {
+				width: 60px;
+				height: 60px;
+				border-bottom: 3px solid #39427B;
+				padding-bottom: 2px;
+				margin-bottom: 10px;
+			}
+			h3 {
+				font-size: 25px;
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+			ul {
+				li {
+					line-height: 1.5;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
