@@ -8,15 +8,15 @@ import iconMisi from "../assets/img/og-misi.png";
 const About = () => {
 	return (
 		<Helmet title="About">
-			<section className="about">
+			<section className="herro-banner-about">
 				<Container className="text-center">
 					<div className="title">
-						<h2>About Me</h2>
+						<h1>About Me</h1>
 					</div>
 				</Container>
 			</section>
 
-			<section className="sect-2">
+			<section className="sect-2-about">
 				<Container>
 					<Row className="justify-content-center wrapper-text">
 						<Col md="4">
@@ -33,9 +33,10 @@ const About = () => {
 								<img src={imgAbout} alt="About" />
 							</figure>
 						</Col>
+
 						<Col md="7">
 							<div className="text-about">
-								<h3>My Furniture</h3>
+								<h1>My Furniture</h1>
 								<div className="desc">
 									<p>MyFurniture is a national scale household knockdown furniture brand that is the choice of "Indonesian Family Furniture". MyFurniture provides inspirational solutions for your dream home starting from the living room, family room, bedroom and kitchen. Household furniture with Engineered Wood raw materials such as Particle Board, MDF and Plywood</p>
 									<p>The company was founded in 2023 in the city of Jember and expanded in 2015 to the Lumajang district with the current number of employees reaching more than 1,000 people. For MyFurniture, home is the most comfortable place for each family member to spend most of their time. A place to share love, a place to unwind, and a place that is always missed, so these factors are our concern and priority.</p>
