@@ -26,7 +26,6 @@ const Shop = () => {
 			setProductsData(filteredProducts)
 		}
 	}
-
 	const handleSearch = e => {
 		const searchValue = e.target.value
 		const searchProducts = products.filter(item => item.productName.toLowerCase().includes(searchValue.toLowerCase()))

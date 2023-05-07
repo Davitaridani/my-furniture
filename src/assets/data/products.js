@@ -85,6 +85,7 @@ const products = [
     productName: "Amazon Modern Sofa",
     imgUrl: chair3,
     category: "chair",
+    groupBy: "best-saller",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -173,6 +174,7 @@ const products = [
     productName: "Fllufy Sheep Sofa",
     imgUrl: chair7,
     category: "chair",
+    groupBy: "best-saller",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -398,6 +400,7 @@ const products = [
     productName: "Rolex Watch",
     imgUrl: sofa2,
     category: "sofa",
+    groupBy: "best-saller",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -508,6 +511,7 @@ const products = [
     productName: "Beat EP Headphones",
     imgUrl: sofa7,
     category: "sofa",
+    groupBy: "best-saller",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -552,6 +556,7 @@ const products = [
     productName: "Beat EP Headphones",
     imgUrl: sofa10,
     category: "sofa",
+    groupBy: "best-saller",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -576,6 +581,7 @@ const products = [
     productName: "Timex Easy Reader Watch",
     imgUrl: table1,
     category: "table",
+    groupBy: "best-saller",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",

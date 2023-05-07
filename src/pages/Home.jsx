@@ -9,37 +9,26 @@ import heroImg from "../assets/img/hero-img.png";
 import Services from "../Services/Services";
 import imgCounter from "../assets/img/counter-timer-img.png";
 import Clock from "../components/UI/Clock";
-
 import imgChair from "../assets/img/img-card-1.png";
-import imgSofa from "../assets/img/img-card-2.png";
-import imgSofa2 from "../assets/img/img-card-3.png";
+import imgChair2 from "../assets/img/img-card-2.png";
+import imgChair3 from "../assets/img/img-card-3.png";
+import Customers from "../components/Customers";
+import BestFurniture from "../components/BestFurniture";
+import Testimoni from "../components/Testimoni";
 
 const Home = () => {
-  const [trendingProduct, setTrendingProduct] = useState([]);
   const [bestSallerProduct, setBestSallerProduct] = useState([]);
-  const [mobileProduct, setMobileProduct] = useState([]);
-  const [wirelessProduct, setWirelessProduct] = useState([]);
-  const [popularProduct, setPopularProduct] = useState([]);
 
   useEffect(() => {
-    const filteredTrendingProduct = products.filter(item => item.category === "chair");
-    const filteredBestSallerProduct = products.filter(item => item.category === "sofa");
-    const filteredMobileProduct = products.filter(item => item.category === "mobile");
-    const filteredWirelessProduct = products.filter(item => item.category === "wireless");
-    const filteredPopularProduct = products.filter(item => item.category === "watch");
-
-    setTrendingProduct(filteredTrendingProduct)
+    const filteredBestSallerProduct = products.filter(item => item.groupBy === "best-saller");
     setBestSallerProduct(filteredBestSallerProduct)
-    setMobileProduct(filteredMobileProduct)
-    setWirelessProduct(filteredWirelessProduct)
-    setPopularProduct(filteredPopularProduct)
   }, [])
 
   const yearNow = new Date().getFullYear()
 
   return (
     <Helmet title={"Home"}>
-      <section className="sect-hero">
+      <section className="sect-herro-banner">
         <Container>
           <Row>
             <Col lg="6" md="6" className="content-banner">
@@ -52,7 +41,7 @@ const Home = () => {
                 </motion.button>
               </div>
             </Col>
-            <Col lg="6" md="6">
+            <Col lg="6" md="6" className="pl-0 h-100">
               <div className="hero-img">
                 <img src={heroImg} alt="hero-image" />
               </div>
@@ -61,17 +50,11 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="sect-2-services">
-        <Services />
-      </section>
-
-
-      <section className="sect-3">
+      <section className="sect-2-home">
         <Container>
           <Row className="justify-content-center">
             <Col md="5">
               <div className="wrapper-text">
-
                 <h1>Why are we the best?</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod et aliquam a eveniet odit, ut cum incidunt animi neque aperiam aspernatur, ipsa reiciendis. Dignissimos, optio delectus.</p>
                 <a href="" className="btn-custom">Explore More</a>
@@ -86,8 +69,10 @@ const Home = () => {
               </div>
             </Col>
             <Col md="3">
-              <div className="cards mt-3">
-                <img src={imgSofa} alt="chair" className="img-fluid" />
+              <div className="cards">
+                <div className="img-card d-flex justify-content-center">
+                  <img src={imgChair2} alt="chair" className="img-fluid  " />
+                </div>
                 <div className="text text-center">
                   <h3>Processing</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum.</p>
@@ -96,32 +81,34 @@ const Home = () => {
               </div>
             </Col>
             <Col md="3">
+              <div className="cards mt-5">
+                <div className="img-card d-flex justify-content-center">
+                  <img src={imgChair3} alt="chair" className="img-fluid  " />
+                </div>
+                <div className="text text-center">
+                  <h3>Finishing</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero et unde.</p>
+                  <a href="" className="btn-custom">Explore More</a>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
       </section>
 
-      <section className="sect-3-trending-product">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h3 className="text-title mb-5">Treding Products</h3>
-            </Col>
-            <ListProducts data={trendingProduct} />
-          </Row>
-        </Container>
+      <section className="sect-3-services">
+        <Services />
       </section>
 
-      <section className="sect-4-best-saller">
-        <Container>
-          <Row>
-            <h3 className="text-title text-center">Best Seller</h3>
-            <ListProducts data={bestSallerProduct} />
-          </Row>
-        </Container>
+      <section className="sect-4-customers">
+        <Customers />
       </section>
 
-      <section className="sect-5-timer-count">
+      <section className="sect-5">
+        <BestFurniture />
+      </section>
+
+      <section className="sect-6-timer-count">
         <Container>
           <Row>
             <Col lg="6" md="6" className="items-clock">
@@ -141,7 +128,27 @@ const Home = () => {
         </Container>
       </section>
 
-      <section></section>
+      <section className="sect-4-best-saller">
+        <Container>
+          <Row className="justify-content-evenly">
+            <h3 className="text-title text-center">Best Saller</h3>
+            <ListProducts data={bestSallerProduct} />
+          </Row>
+        </Container>
+      </section>
+
+      <section className="sect-6-testimoni pt-0">
+        <Container>
+          <div className="text-center title w-50 mx-auto text-title">
+            <h3>What Customers Say</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, eius
+              dignissimos. Explicabo laudantium iste facilis! Saepe.
+            </p>
+          </div>
+          <Testimoni />
+        </Container>
+      </section>
 
     </Helmet >
   )

@@ -1,13 +1,11 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
+import About from "../pages/About";
+import Cart from "../pages/Cart";
+import CheckOut from "../pages/CheckOut";
 import Home from "../pages/Home";
 import ProductDetail from "../pages/ProductDetail";
 import Shop from "../pages/Shop";
-import Cart from "../pages/Cart";
-import CheckOut from "../pages/CheckOut";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import About from "../pages/About";
 
 const Routers = () => {
   return (
@@ -19,8 +17,6 @@ const Routers = () => {
       <Route path="shop/:id" element={<ProductDetail />} />
       <Route path="cart" element={<Cart />} />
       <Route path="checkout" element={<CheckOut />} />
-      <Route path="login" element={<Login />} />
-      <Route path="register" element={<Register />} />
     </Routes>
   );
 };

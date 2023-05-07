@@ -1,14 +1,13 @@
-@use "global";
+@import "global";
 
 $mainColor : #091d2e;
 $bgBlue: #c2e8ef;
-
 
 p {
 	font-weight: 500;
 }
 
-.sect-hero {
+.sect-herro-banner {
 	background: $bgBlue;
 	.container {
 		.row {
@@ -46,11 +45,8 @@ p {
 	}
 }
 
-.sect-2-services {
-	padding: 80px 15px 0 ;
-}
-
-.sect-3 {
+.sect-2-home {
+	padding-top: 110px;
 	.container {
 		.wrapper-text {
 			margin-bottom: 50px;
@@ -81,6 +77,7 @@ p {
 				}
 				p {
 					margin-bottom: 20px;
+					font-size: 14px;
 				}
 				a {
 					padding: 8px 15px;
@@ -99,25 +96,142 @@ p {
 			}
 		}
 		.cards {
-			position: relative;
+			margin-top: 100px;
 			background-color: #f7f7f7bc;
-			img {
-				height: 300px;
-
+			border-radius: 50px 10px;
+			padding: 20px 25px 20px;
+			.img-card {
+				position: relative;
+				img {
+					height: 250px;
+					width: auto;
+					top: -110px;
+					margin: 0 auto;
+					position: absolute;
+				}
+			}
+			.text {
+				padding-top: 150px ;
+				h3 {
+					font-size: 25px;
+				}
+				p {
+					margin-bottom: 20px;
+					font-size: 14px;
+				}
+				a {
+					padding: 8px 15px;
+					font-size: 14px;
+					background-color: transparent !important;
+					border: 1px solid #39427B;
+					color: $mainColor;
+				}
 			}
 		}
 	}
 }
 
-.sect-3-trending-product {
-	padding: 80px 0 0 ;
+.sect-3-services {
+	.container {
+		.row {
+			.text-service {
+				h3 {
+					font-size: 30px;
+				}
+				p {
+					margin-bottom: 30px;
+				}
+				a {
+					color: #fff;
+					font-size: 15px;
+				}
+			}
+			.card-service {
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+				.services-items {
+					padding: 20px;
+					column-gap: 12px;
+					cursor: pointer;
+					border-radius: 5px;
+					.items-text {
+						h3 {
+							font-size: 18px;
+							color: $mainColor;
+							font-weight: 600;
+						}
+						p {
+							font-size: 15px;
+							margin-top: 5px;
+							color: #222;
+						}
+					}
+					.icon-card {
+						font-size: 35px;
+					}
+				}
+			}
+		}
+	}
 }
 
 .sect-4-best-saller {
 	padding: 80px 0 50px;
 }
 
-.sect-5-timer-count {
+.sect-4-customers {
+	.container {
+		.row {
+			.wrapper-text {
+				h1 {
+					letter-spacing: 0;
+					font-size: 30px;
+					margin-bottom: 15px;
+				} 
+			}
+			.counter-up {
+				h5 {
+					letter-spacing: 0;
+					font-size: 20px;
+					margin-bottom: 5px;
+				}
+				h1 {
+					color: #39427B;
+					font-size: 30px;
+				}
+			}
+		}
+		img {
+			width: 80%;
+			margin: 0 auto;
+			filter: drop-shadow(5px 26px 16px #C0C0C0);
+			margin-top: -100px;
+		}
+	}
+}
+
+.sect-5 {
+	.container {
+		.row {
+			.wrapper-text {
+				h1 {
+					font-size: 30px;
+					margin-bottom: 15px;
+				}
+				p {
+					margin-bottom: 30px;
+				}
+				a {
+					color: $mainColor;
+					background-color: transparent !important;
+					border: 1px solid $mainColor;
+					padding: 9px 24px;
+				}
+			}
+		}
+	}
+}
+
+.sect-6-timer-count {
 	background-color: $mainColor;
 	height: 300px;
 	.container {
@@ -129,7 +243,6 @@ p {
 				padding: 7px 15px;
 			}
 		}
-
 		img {
 			width: 70% !important;
 			height: 70%;
@@ -137,6 +250,70 @@ p {
 		}
 	}
 }
+
+.sect-6-testimoni {
+	.container {
+		.text-title {
+			margin-bottom: 20px;
+			h3 {
+				font-size: 30px;
+				margin-bottom: 10px;
+			} 
+			p {
+				color: #a1a1aa;
+				font-size: 14px;
+			}
+		}
+		.row {
+			.swiper {
+				.wrapper-testimoni {
+					max-width: 80%;
+					h3 {
+						font-size: 22px;
+						margin-bottom: 8px;
+					} 
+					p {
+						font-size: 15px;
+						color: #a1a1aa;
+						margin-bottom: 15px;
+						font-weight: 400;
+					}
+					.icon {
+						margin-bottom: 10px;
+						span {
+							color: #ff9f18;
+							font-size: 19px;
+						}
+					}
+					.text-person {
+						height: 70px;
+						h3 {
+							font-size: 18px;
+							margin-bottom: 3px;
+							color: #39427B;
+						}
+						p {
+							font-size: 14px;
+							margin-bottom: 10px;
+						}
+					}
+					img {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+					}
+				}
+				.swiper-pagination {
+					text-align: start;
+					bottom: 0;
+					span {
+						background-color: #39427B;
+					}
+				}
+			}
+		}
+	}
+} 
 
 // Breakpoint
 @mixin responsive($breakpoint) {
@@ -162,9 +339,8 @@ p {
 	}
 }
 
-// Mobile
 @include responsive(mobile) {
-	.sect-hero {
+	.sect-herro-banner {
 		padding-bottom: 70px;
 		padding: 50px 15px;
 		.container {
