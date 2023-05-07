@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import serviceData from "../assets/data/serviceData";
 
@@ -9,9 +10,9 @@ const Services = () => {
 			<Row className="justify-content-center">
 				<Col md="4" className='d-flex align-items-center'>
 					<div className="text-service">
-						<h3>Our Services</h3>
+						<h1>Our Services</h1>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eligendi neque! Ipsum dolorem dolor minima veritatis in iusto, nostrum natus, cupiditate nihil eveniet laborum ipsa fugiat.</p>
-						<a href="" className='btn-custom'>Explore More</a>
+						<Link href="" className='btn-custom'>Explore More</Link>
 					</div>
 				</Col>
 				<Col md="7">

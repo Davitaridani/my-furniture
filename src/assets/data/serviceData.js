@@ -30,9 +30,9 @@ const serviceData = [
 ];
 
 export const dataCustomer = [
-  { title: "Years of Experience", value: 20 },
+  { title: "Years of Experience", value: 10 },
   { title: "Awards Gained", value: 150 },
-  { title: "Furniture Sold", value: 800 },
+  { title: "Furniture Sold", value: 500 },
 ];
 
 export const testimoni = [

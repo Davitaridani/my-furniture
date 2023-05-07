@@ -11,7 +11,7 @@ const BestFurniture = () => {
         <Col md="5">
           <img src={modernFurniture} alt="" />
         </Col>
-        <Col md="5" className="d-flex align-items-center">
+        <Col md="5" className="d-flex align-items-center mb-5 mb-md-0">
           <div class="wrapper-text">
             <h1>
               We Make Modern Furnitures <br /> For You
@@ -23,12 +23,12 @@ const BestFurniture = () => {
               voluptatem fugit impedit iure temporibus. Dignissimos.
             </p>
             <Link href="" className="btn-custom">
-              Explore
+              Explore More
             </Link>
           </div>
         </Col>
 
-        <Col md="5" className="d-flex align-items-center ">
+        <Col md="5" className="d-flex align-items-center mb-5 mb-md-0">
           <div class="wrapper-text">
             <h1>
               Best Furniture Choice For <br /> Your Home
@@ -40,7 +40,7 @@ const BestFurniture = () => {
               voluptatem fugit impedit iure temporibus. Dignissimos.
             </p>
             <Link href="" className="btn-custom">
-              Explore
+              Explore More
             </Link>
           </div>
         </Col>

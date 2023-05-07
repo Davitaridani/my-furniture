@@ -37,7 +37,7 @@ const Home = () => {
                 <h3>Jadikan Interior Anda Lebih Minimalis & Modern</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatem. Ab et, praesentium in doloribus quidem quas natus nemo tenetur commodi, illo provident omnis nam numquam, maiores laboriosam itaque consectetur?</p>
                 <motion.button whileTap={{ scale: 1.2 }} className="btn btn-buy">
-                  <Link className="nav-link" to="/shop">Beli Sekarang</Link>
+                  <Link className="nav-link" to="/shop">Buy Now</Link>
                 </motion.button>
               </div>
             </Col>
@@ -57,18 +57,18 @@ const Home = () => {
               <div className="wrapper-text">
                 <h1>Why are we the best?</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod et aliquam a eveniet odit, ut cum incidunt animi neque aperiam aspernatur, ipsa reiciendis. Dignissimos, optio delectus.</p>
-                <a href="" className="btn-custom">Explore More</a>
+                <Link href="" className="btn-custom">Explore More</Link>
               </div>
               <div className="item-card d-flex align-items-center">
                 <div className="text">
                   <h3>Brefing</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, illum, libero possimus.</p>
-                  <a href="" className="btn-custom">Explore More</a>
+                  <Link href="" className="btn-custom">Explore More</Link>
                 </div>
                 <img src={imgChair} alt="sofa" className="img-fluid" />
               </div>
             </Col>
-            <Col md="3">
+            <Col md="3" className="wrapper-card">
               <div className="cards">
                 <div className="img-card d-flex justify-content-center">
                   <img src={imgChair2} alt="chair" className="img-fluid  " />
@@ -80,7 +80,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col md="3">
+            <Col md="3" className="wrapper-card">
               <div className="cards mt-5">
                 <div className="img-card d-flex justify-content-center">
                   <img src={imgChair3} alt="chair" className="img-fluid  " />
@@ -96,29 +96,28 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="sect-3-services">
+      <section className="sect-3-home">
         <Services />
       </section>
 
-      <section className="sect-4-customers">
+      <section className="sect-4-home">
         <Customers />
       </section>
 
-      <section className="sect-5">
+      <section className="sect-5-home pt-0">
         <BestFurniture />
       </section>
 
-      <section className="sect-6-timer-count">
+      <section className="sect-6-home">
         <Container>
           <Row>
             <Col lg="6" md="6" className="items-clock">
               <div className="clock-top-content">
-                <h3 className="text-white fs-6 mb-2">Penawaran Terbatas</h3>
-                <h2 className="text-white fs-4 mb-3">Quality</h2>
+                <h1 className="text-white">Limited Offer</h1>
               </div>
               <Clock />
               <motion.button whileTap={{ scale: 1.1 }} className="btn-buy">
-                <Link to="/shop" className="nav-link">Kunjungi Sekarang</Link>
+                <Link to="/shop" className="nav-link border-0">Visit Now</Link>
               </motion.button>
             </Col>
             <Col lg="6" md="6" className="text-end items-img-clock">
@@ -128,16 +127,16 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="sect-4-best-saller">
+      <section className="sect-7-home">
         <Container>
+          <h1 className="text-title text-center">Best Saller</h1>
           <Row className="justify-content-evenly">
-            <h3 className="text-title text-center">Best Saller</h3>
             <ListProducts data={bestSallerProduct} />
           </Row>
         </Container>
       </section>
 
-      <section className="sect-6-testimoni pt-0">
+      <section className="sect-8-home pt-0">
         <Container>
           <div className="text-center title w-50 mx-auto text-title">
             <h3>What Customers Say</h3>

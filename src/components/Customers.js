@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataCustomer } from "../assets/data/serviceData";
 import imgSofa from "../assets/img/sofa.png";
+import CountUp from "react-countup";
 
 const Customers = () => {
   return (
@@ -25,8 +26,16 @@ const Customers = () => {
 
         {dataCustomer.map((item, index) => (
           <Col md="2" key={index} className="counter-up">
-            <h5>{item.title}</h5>
-            <h1>{item.value}+</h1>
+            <h3>{item.title}</h3>
+            <h1>
+              <CountUp
+                start={0}
+                end={item.value}
+                duration={5.75}
+                enableScrollSpy
+              />{" "}
+              +
+            </h1>
           </Col>
         ))}
       </Row>

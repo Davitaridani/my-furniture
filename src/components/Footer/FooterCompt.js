@@ -61,11 +61,6 @@ const FooterCompt = () => {
                 </Link>
               </ListGroupItem>
               <ListGroupItem className="ps-0 border-0">
-                <Link to="/login" className="nav-link">
-                  Login
-                </Link>
-              </ListGroupItem>
-              <ListGroupItem className="ps-0 border-0">
                 <Link to="#" className="nav-link">
                   privacy policy
                 </Link>

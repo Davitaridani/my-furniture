@@ -17,7 +17,7 @@ const Testimoni = () => {
           speed={1000}
           loop={true}
           autoplay={{
-            delay: 3000,
+            delay: 3500,
           }}
           pagination={{
             clickable: true,
@@ -54,7 +54,7 @@ const Testimoni = () => {
         </Swiper>
       </Col>
       <Col md="4">
-        <div class="img-testimnoi">
+        <div class="img-testimoni">
           <img src={profileTestimoni} alt="testimoni" className="img-fluid" />
         </div>
       </Col>
