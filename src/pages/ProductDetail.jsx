@@ -19,7 +19,7 @@ const ProductDetail = () => {
 
 	const { id } = useParams()
 	const product = products.find(item => item.id === id)
-	const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category, nameReview } = product
+	const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category } = product
 
 	const relatedProducts = products.filter(item => item.category === category)
 

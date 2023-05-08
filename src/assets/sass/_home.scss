@@ -1,12 +1,5 @@
 @import "global";
 
-$mainColor : #091d2e;
-$bgBlue: #c2e8ef;
-
-p {
-	font-weight: 500;
-}
-
 .sect-herro-banner {
 	background: $bgBlue;
 	.container {
@@ -65,6 +58,7 @@ p {
 			}
 		}
 		.item-card {
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 			background-color: #f7f7f7bc;
 			padding: 13px;
 			padding-bottom: 20px;
@@ -96,6 +90,7 @@ p {
 			}
 		}
 		.cards {
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 			margin-top: 100px;
 			background-color: #f7f7f7bc;
 			border-radius: 50px 10px;
