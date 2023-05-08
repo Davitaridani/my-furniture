@@ -7,8 +7,11 @@ import products from "../../src/assets/data/products";
 
 const Shop = () => {
 	const [productsData, setProductsData] = useState(products)
+
+
 	const handleFilter = e => {
 		const filterValue = e.target.value
+
 		if (filterValue === "chair") {
 			const filteredProducts = products.filter(item => item.category === "chair")
 			setProductsData(filteredProducts)
@@ -40,7 +43,7 @@ const Shop = () => {
 					<Row>
 						<Col lg="3" md="6" className="filter-widget me-4" >
 							<select onChange={handleFilter}>
-								<option>Filter By Kategory</option>
+								<option>Filter By Category</option>
 								<option value="chair">Chair</option>
 								<option value="mattress">Mattress</option>
 								<option value="sofa">Sofa</option>
@@ -49,11 +52,11 @@ const Shop = () => {
 							</select>
 						</Col>
 						<Col lg="3" md="6" className="filter-widget" >
-							<select>
+							{/* <select>
 								<option>Sort By</option>
 								<option value="ascending">Ascending</option>
 								<option value="descending">Descending</option>
-							</select>
+							</select> */}
 						</Col>
 						<Col lg="5" md="6"  >
 							<div className="btn-search-box">

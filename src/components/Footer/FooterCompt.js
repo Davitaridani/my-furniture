@@ -11,7 +11,7 @@ const FooterCompt = () => {
           <Col lg="4" className="desc-about-shop">
             <div className="item-brand d-flex align-items-center">
               <div className="navbar-title text-white ">
-                <h3 className="title-footer">My Shop</h3>
+                <h3 className="title-footer">My Furniture</h3>
               </div>
             </div>
             <p className="text-footer text-white">
@@ -25,7 +25,7 @@ const FooterCompt = () => {
               <ListGroup className="foot-menu">
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="#" className="nav-link">
-                    Mobile Phone
+                    Chair
                   </Link>
                 </ListGroupItem>
                 <ListGroupItem className="ps-0 border-0">
@@ -35,12 +35,7 @@ const FooterCompt = () => {
                 </ListGroupItem>
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="#" className="nav-link">
-                    Arm Chair
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem className="ps-0 border-0">
-                  <Link to="#" className="nav-link">
-                    Smart Watches
+                    Wardrobe
                   </Link>
                 </ListGroupItem>
               </ListGroup>
