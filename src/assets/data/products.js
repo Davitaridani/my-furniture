@@ -52,6 +52,7 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Mark",
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -70,10 +71,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Davit",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dani",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -94,10 +97,12 @@ const products = [
     reviews: [
       {
         rating: 4.6,
+        reviewer: "Dimas",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
         rating: 4.9,
+        reviewer: "Zidan",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -115,10 +120,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Sinta",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dewi",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -137,11 +144,8 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dini",
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -159,10 +163,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Santi",
         rating: 4.6,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Zara",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -182,10 +188,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Kiki",
         rating: 4.6,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Saiful",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -206,10 +214,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Agung",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Feby",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -228,10 +238,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dinia",
         rating: 4.6,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Nikita",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -250,10 +262,17 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dimas",
+        rating: 4.6,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        reviewer: "Seto",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Agung",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -272,11 +291,8 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Santi",
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -294,10 +310,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dini",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Rahayu",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -316,10 +334,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dini",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Santi",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -338,10 +358,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "John",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Doni",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -360,10 +382,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Doni",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Rike",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -385,10 +409,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Aden",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Sasa",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -408,10 +434,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Siti",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dandi",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -430,10 +458,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Salsa",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dini",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -452,12 +482,19 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Fani",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Rama",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        reviewer: "Pras",
+        rating: 4.6,
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, corrupti..",
       },
     ],
     avgRating: 4.8,
@@ -474,10 +511,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dandi",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Satria",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -496,10 +535,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Riya",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dini",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -519,10 +560,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Windi",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Risa",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -541,10 +584,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Santia",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Ana",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -564,10 +609,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Dimas",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Royan",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -589,11 +636,13 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Salma",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
         rating: 4.9,
+        reviewer: "Varel",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -611,10 +660,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Angga",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Royan",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -633,10 +684,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Angggun",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Santi",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -655,10 +708,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Santi",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Anis",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -677,10 +732,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Imel",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Bela",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -701,10 +758,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Anggi",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Hilda",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -723,10 +782,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Firda",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Anggi",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -745,10 +806,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Salma",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Nisa",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -767,10 +830,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Nur",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dini",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -789,10 +854,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Zainal",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Dana",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -811,10 +878,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Anis",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Bela",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
@@ -833,10 +902,12 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
+        reviewer: "Anggun",
         rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
+        reviewer: "Fina",
         rating: 4.9,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },

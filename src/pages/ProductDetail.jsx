@@ -19,7 +19,7 @@ const ProductDetail = () => {
 
 	const { id } = useParams()
 	const product = products.find(item => item.id === id)
-	const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category } = product
+	const { imgUrl, productName, price, avgRating, reviews, description, shortDesc, category, nameReview } = product
 
 	const relatedProducts = products.filter(item => item.category === category)
 
@@ -68,28 +68,20 @@ const ProductDetail = () => {
 							<div className="info-product">
 								<h3>{productName}</h3>
 								<div className="rating-product d-flex align-items-center mb-4">
-									<span >
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" /></svg>
-									</span>
-									<span >
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" /></svg>
-									</span>
-									<span >
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" /></svg>
-									</span>
-									<span >
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" /></svg>
-									</span>
-									<span >
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 8.125v7.8l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4ZM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" /></svg>
+									<span className='icon-star'>
+										<iconify-icon icon="material-symbols:star"></iconify-icon>
+										<iconify-icon icon="material-symbols:star"></iconify-icon>
+										<iconify-icon icon="material-symbols:star"></iconify-icon>
+										<iconify-icon icon="material-symbols:star"></iconify-icon>
+										<iconify-icon icon="material-symbols:star-half-outline"></iconify-icon>
 									</span>
 									<div className="text-rating ps-3">
 										<p>(<span>{avgRating}</span> Ratings)</p>
 									</div>
 								</div>
 								<div className="product-price d-flex align-items-center gap-4">
-									<span className='text-price'>Rp. {price}</span>
-									<span className='text-category text-capitalize'> Category : {category}</span>
+									<p className='text-price'>Rp. {price}</p>
+									<p className='text-category text-capitalize'> Category : <span>{category}</span></p>
 								</div>
 								<div className="desc-sort">
 									<p className="mt-3">{shortDesc}</p>
@@ -117,7 +109,7 @@ const ProductDetail = () => {
 										<ul>
 											{reviews?.map((item, index) => (
 												<li key={index} className="mb-4">
-													<h5>Davit</h5>
+													<h5>{item.reviewer}</h5>
 													<span>{item.rating} (Rating)</span>
 													<p>{item.text}</p>
 												</li>
@@ -131,25 +123,20 @@ const ProductDetail = () => {
 													<input type="text" placeholder="Name" ref={reviewUser} required />
 												</div>
 												<div className="form-group d-flex align-items-center gap-3">
-													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>1
-														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-														</svg>
+													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>
+														<iconify-icon icon="material-symbols:star"></iconify-icon>
 													</motion.span>
-													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(2)}>2
-														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-														</svg>
+													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>
+														<iconify-icon icon="material-symbols:star"></iconify-icon>
 													</motion.span>
-													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(3)}>3
-														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-														</svg>
+													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>
+														<iconify-icon icon="material-symbols:star"></iconify-icon>
 													</motion.span>
-													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(4)}>4
-														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-														</svg>
+													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>
+														<iconify-icon icon="material-symbols:star"></iconify-icon>
 													</motion.span>
-													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(5)}>5
-														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-														</svg>
+													<motion.span whileTap={{ scale: 1.2 }} onClick={() => setRating(1)}>
+														<iconify-icon icon="material-symbols:star"></iconify-icon>
 													</motion.span>
 												</div>
 												<div className="form-group">
@@ -160,8 +147,8 @@ const ProductDetail = () => {
 										</div>
 									</div>
 								</div>)}
-
 						</Col>
+
 						<Col lg="12" className="item-product-kategory" >
 							<h3 className="related-title text-center text-capitalize">
 								Produk yang mungkin ada suka

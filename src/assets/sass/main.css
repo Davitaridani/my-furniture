@@ -1603,10 +1603,9 @@ h2, h3, h4, h5 {
   font-size: 25px;
   margin-bottom: 15px;
 }
-.detail-product .container .row .info-product .rating-product span {
+.detail-product .container .row .info-product .rating-product .icon-star {
+  font-size: 20px;
   line-height: 0;
-}
-.detail-product .container .row .info-product .rating-product span svg {
   color: #ff9f18;
 }
 .detail-product .container .row .info-product .rating-product .text-rating p {
@@ -1619,8 +1618,11 @@ h2, h3, h4, h5 {
   font-size: 20px;
   font-weight: 500;
 }
+.detail-product .container .row .info-product .product-price .text-price {
+  font-size: 17px;
+}
 .detail-product .container .row .info-product .product-price .text-category {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: #494949;
 }
@@ -1675,6 +1677,7 @@ h2, h3, h4, h5 {
   cursor: pointer;
   -moz-column-gap: 5px;
        column-gap: 5px;
+  font-size: 18px;
   color: #ff9f18;
 }
 .tab-view .container .row .product-review .review-wrapper .form-review form .form-group input, .tab-view .container .row .product-review .review-wrapper .form-review form .form-group textarea {
@@ -1703,6 +1706,45 @@ h2, h3, h4, h5 {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .detail-product .container .row .info-product {
+    margin-top: 80px;
+  }
+  .detail-product .container .row .info-product h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .detail-product .container .row .info-product .rating-product span {
+    line-height: 0;
+  }
+  .detail-product .container .row .info-product .rating-product span svg {
+    color: #ff9f18;
+  }
+  .detail-product .container .row .info-product .rating-product .text-rating p {
+    margin-bottom: 0;
+  }
+  .detail-product .container .row .info-product .rating-product .text-rating p span {
+    font-weight: 600;
+  }
+  .detail-product .container .row .info-product .product-price {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .detail-product .container .row .info-product .product-price .text-category {
+    font-weight: 500;
+    font-size: 16px;
+    color: #494949;
+  }
+  .detail-product .container .row .info-product .btn-buy {
+    margin-top: 20px;
+    background-color: #091d2e;
+    padding: 8px 25px;
+    border: 0;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}
 @font-face {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
@@ -1772,7 +1814,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.common-section .container .title h2 {
+.common-section .container .title h1 {
   font-size: 35px;
   letter-spacing: 1px;
   color: #fff;
