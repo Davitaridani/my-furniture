@@ -35,7 +35,7 @@ const Home = () => {
             <Col lg="6" md="6" className="content-banner">
               <div className="hero-content">
                 <p className="hero-subTitle">Trending Product In {yearNow}</p>
-                <h3>Jadikan Interior Anda Lebih Minimalis & Modern</h3>
+                <h3>Make Your Interior <br /> More  Minimalist & Modern</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatem. Ab et, praesentium in doloribus quidem quas natus nemo tenetur commodi, illo provident omnis nam numquam, maiores laboriosam itaque consectetur?</p>
                 <motion.button whileTap={{ scale: 1.2 }} className="btn btn-buy">
                   <Link className="nav-link" to="/products">Buy Now</Link>

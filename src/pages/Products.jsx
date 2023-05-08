@@ -42,7 +42,7 @@ const Shop = () => {
 				<Container>
 					<Row>
 						<Col lg="3" md="6" className="filter-widget me-4" >
-							<select onChange={handleFilter}>
+							<select onChange={handleFilter} className='mb-md-0 mb-3'>
 								<option>Filter By Category</option>
 								<option value="chair">Chair</option>
 								<option value="mattress">Mattress</option>
