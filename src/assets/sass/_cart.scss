@@ -21,8 +21,9 @@
 			}
 			.info-sub-total {
 				padding-top: 3px;
-				h3 {
-					font-size: 18px;
+				h1 {
+					font-size: 20px;
+					margin-bottom: 10px;
 					font-weight: 400;
 				}
 				span {
@@ -32,6 +33,7 @@
 				p {
 					font-size: 15px;
 					font-weight: 400;
+					margin-bottom: 20px;
 				}
 			}
 			.items-btn {
@@ -39,7 +41,54 @@
 					background-color: $mainColor;
 					color: #fff;
 					padding: 9px 25px;
+					font-size: 15px;
 					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-1-cart {
+		padding: 40px 10px !important;
+		.container {
+			.row {
+				.table {
+					tr {
+						th {
+							font-size: 15px;
+						}
+						td {
+							font-size: 14px;
+							img {
+								width: 80px;
+								height: 60px;
+							}
+							.btn-delete {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+				.info-sub-total {
+					padding-top: 3px;
+					h1 {
+						font-size: 24px !important;
+					}
+					span {
+						font-size: 18px;
+						font-weight: 600;
+					}
+					p {
+						font-size: 14px !important;
+					}
+				}
+				.items-btn {
+					.btn-buy {
+						padding: 8px 20px;
+						font-size: 13px;
+					}
 				}
 			}
 		}

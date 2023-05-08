@@ -12,7 +12,7 @@
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -73,7 +73,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -297,7 +297,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -875,7 +875,7 @@ p {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1092,7 +1092,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1163,8 +1163,9 @@ section {
 .sect-1-cart .container .row .info-sub-total {
   padding-top: 3px;
 }
-.sect-1-cart .container .row .info-sub-total h3 {
-  font-size: 18px;
+.sect-1-cart .container .row .info-sub-total h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: 400;
 }
 .sect-1-cart .container .row .info-sub-total span {
@@ -1174,19 +1175,56 @@ section {
 .sect-1-cart .container .row .info-sub-total p {
   font-size: 15px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .sect-1-cart .container .row .items-btn .btn-buy {
   background-color: #091d2e;
   color: #fff;
   padding: 9px 25px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .sect-1-cart {
+    padding: 40px 10px !important;
+  }
+  .sect-1-cart .container .row .table tr th {
+    font-size: 15px;
+  }
+  .sect-1-cart .container .row .table tr td {
+    font-size: 14px;
+  }
+  .sect-1-cart .container .row .table tr td img {
+    width: 80px;
+    height: 60px;
+  }
+  .sect-1-cart .container .row .table tr td .btn-delete {
+    font-size: 16px;
+  }
+  .sect-1-cart .container .row .info-sub-total {
+    padding-top: 3px;
+  }
+  .sect-1-cart .container .row .info-sub-total h1 {
+    font-size: 24px !important;
+  }
+  .sect-1-cart .container .row .info-sub-total span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .sect-1-cart .container .row .info-sub-total p {
+    font-size: 14px !important;
+  }
+  .sect-1-cart .container .row .items-btn .btn-buy {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
 @font-face {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1332,7 +1370,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1431,7 +1469,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1603,7 +1641,7 @@ h2, h3, h4, h5 {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
@@ -1679,7 +1717,7 @@ section {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
 }
-p, button, span, li {
+p, button, span, li, td, th {
   font-family: "Inter", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;

@@ -17,8 +17,8 @@ const Cart = () => {
 			<section className='sect-1-cart'>
 				<Container>
 					<Row>
-						<Col lg='9'>
-							{cartItems.length === 0 ? <h4 className='text-center fs-4 text-danger'>Keranjang Anda Kosong!!</h4> :
+						<Col lg='9' className='mb-4'>
+							{cartItems.length === 0 ? <h4 className='text-center fs-4 text-danger'> Your Cart is Empty!!</h4> :
 								<table className='table bordered'>
 									<thead>
 										<tr>
@@ -40,15 +40,15 @@ const Cart = () => {
 						</Col>
 						<Col lg='3' className='info-sub-total '>
 							<div className='d-flex align-items-center justify-content-between '>
-								<h3 className='mb-0'>Sub Total</h3>
+								<h1 className='mb-0'>Sub Total</h1>
 								<span>Rp. {totalAmount}</span>
 							</div>
-							<p className='mt-2 text-capitalize'>pengambilan dan pengiriman akan dihitung saat checkout</p>
-							<div className='items-btn d-flex justify-content-around '>
+							<p className='mt-2 text-capitalize'>Pick-up and delivery <br /> will be calculated at checkout</p>
+							<div className='items-btn d-flex justify-content-around'>
 								<button className='btn-buy  border-0'>
 									<Link className='nav-link' to="/shop">Next Shopping</Link>
 								</button>
-								<button className='btn-buy  border-0'>
+								<button className='btn-buy border-0'>
 									<Link className='nav-link' to="/checkout">Checkout</Link>
 								</button>
 							</div>
