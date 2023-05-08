@@ -5,7 +5,7 @@ import Cart from "../pages/Cart";
 import CheckOut from "../pages/CheckOut";
 import Home from "../pages/Home";
 import ProductDetail from "../pages/ProductDetail";
-import Shop from "../pages/Shop";
+import Products from "../pages/Products";
 
 const Routers = () => {
   return (
@@ -13,8 +13,8 @@ const Routers = () => {
       <Route path="/" element={<Navigate to="home" />} />
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="shop" element={<Shop />} />
-      <Route path="shop/:id" element={<ProductDetail />} />
+      <Route path="products" element={<Products />} />
+      <Route path="product/:id" element={<ProductDetail />} />
       <Route path="cart" element={<Cart />} />
       <Route path="checkout" element={<CheckOut />} />
     </Routes>

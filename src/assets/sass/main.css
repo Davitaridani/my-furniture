@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
 @font-face {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
@@ -1045,6 +1046,67 @@ section {
   }
   .sect-2-about .container .visi-misi ul li {
     font-size: 15px;
+  }
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li, td, th {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
   }
 }
 .shop-products {

@@ -9,7 +9,7 @@ import iconLogo from "../../assets/img/icon-logo.png";
 const menu_links = [
   { path: "home", display: "Home" },
   { path: "about", display: "About" },
-  { path: "shop", display: "Product" },
+  { path: "products", display: "Product" },
   { path: "cart", display: "Cart" },
 ];
 

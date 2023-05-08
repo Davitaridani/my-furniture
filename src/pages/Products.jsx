@@ -3,7 +3,7 @@ import CommonSection from "../components/UI/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import ListProducts from "../components/UI/ListProducts";
-import products from "../../src/assets/data/products";
+import products from "../assets/data/products";
 
 const Shop = () => {
 	const [productsData, setProductsData] = useState(products)

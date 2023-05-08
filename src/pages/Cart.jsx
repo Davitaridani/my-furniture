@@ -7,7 +7,7 @@ import CommonSection from '../components/UI/CommonSection';
 import { cartActions } from '../redux/slices/CartSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
-const Cart = () => {
+const Products = () => {
 
 	const cartItems = useSelector(state => state.cart.cartItems)
 	const totalAmount = useSelector(state => state.cart.totalAmount)
@@ -46,7 +46,7 @@ const Cart = () => {
 							<p className='mt-2 text-capitalize'>Pick-up and delivery <br /> will be calculated at checkout</p>
 							<div className='items-btn d-flex justify-content-around'>
 								<button className='btn-buy  border-0'>
-									<Link className='nav-link' to="/shop">Next Shopping</Link>
+									<Link className='nav-link' to="/products">Next Shopping</Link>
 								</button>
 								<button className='btn-buy border-0'>
 									<Link className='nav-link' to="/checkout">Checkout</Link>
@@ -81,4 +81,4 @@ const Tr = ({ item }) => {
 	</tr>
 }
 
-export default Cart
+export default Products

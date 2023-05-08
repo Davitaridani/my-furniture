@@ -45,7 +45,7 @@ const FooterCompt = () => {
             <h3 className="title-footer">Usefull Links</h3>
             <ListGroup className="foot-link">
               <ListGroupItem className="ps-0 border-0">
-                <Link to="/shop" className="nav-link">
+                <Link to="/products" className="nav-link">
                   Shop
                 </Link>
               </ListGroupItem>

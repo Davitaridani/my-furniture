@@ -37,7 +37,7 @@ const Home = () => {
                 <h3>Jadikan Interior Anda Lebih Minimalis & Modern</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatem. Ab et, praesentium in doloribus quidem quas natus nemo tenetur commodi, illo provident omnis nam numquam, maiores laboriosam itaque consectetur?</p>
                 <motion.button whileTap={{ scale: 1.2 }} className="btn btn-buy">
-                  <Link className="nav-link" to="/shop">Buy Now</Link>
+                  <Link className="nav-link" to="/products">Buy Now</Link>
                 </motion.button>
               </div>
             </Col>
@@ -57,13 +57,13 @@ const Home = () => {
               <div className="wrapper-text">
                 <h1>Why are we the best?</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod et aliquam a eveniet odit, ut cum incidunt animi neque aperiam aspernatur, ipsa reiciendis. Dignissimos, optio delectus.</p>
-                <Link href="" className="btn-custom">Explore More</Link>
+                <Link to="/products" className="btn-custom">Explore More</Link>
               </div>
               <div className="item-card d-flex align-items-center">
                 <div className="text">
                   <h3>Brefing</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, illum, libero possimus.</p>
-                  <Link href="" className="btn-custom">Explore More</Link>
+                  <Link to="/products" className="btn-custom">Explore More</Link>
                 </div>
                 <img src={imgChair} alt="sofa" className="img-fluid" />
               </div>
@@ -76,7 +76,7 @@ const Home = () => {
                 <div className="text text-center">
                   <h3>Processing</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum.</p>
-                  <a href="" className="btn-custom">Explore More</a>
+                  <Link to="/products" className="btn-custom">Explore More</Link>
                 </div>
               </div>
             </Col>
@@ -88,7 +88,7 @@ const Home = () => {
                 <div className="text text-center">
                   <h3>Finishing</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero et unde.</p>
-                  <a href="" className="btn-custom">Explore More</a>
+                  <Link to="/products" className="btn-custom">Explore More</Link>
                 </div>
               </div>
             </Col>
@@ -117,7 +117,7 @@ const Home = () => {
               </div>
               <Clock />
               <motion.button whileTap={{ scale: 1.1 }} className="btn-buy">
-                <Link to="/shop" className="nav-link border-0">Visit Now</Link>
+                <Link to="/products" className="nav-link border-0">Visit Now</Link>
               </motion.button>
             </Col>
             <Col lg="6" md="6" className="text-end items-img-clock">

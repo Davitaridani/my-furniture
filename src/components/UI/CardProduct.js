@@ -23,7 +23,7 @@ const CardProduct = ({ item }) => {
     <Col lg="3" md="4" col="12" className="items-card-products">
       <div className="product-item">
         <div className="img-product">
-          <Link to={`/shop/${item.id}`}>
+          <Link to={`/product/${item.id}`}>
             <motion.img
               whileHover={{ scale: 0.9 }}
               src={item.imgUrl}
@@ -35,7 +35,7 @@ const CardProduct = ({ item }) => {
         <div className="product-info p-3">
           <div className="title-product">
             <h3>
-              <Link to={`/shop/${item.id}`}>{item.productName}</Link>
+              <Link to={`/product/${item.id}`}>{item.productName}</Link>
             </h3>
             <p>{item.shortDesc}</p>
           </div>
