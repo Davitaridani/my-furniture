@@ -1597,7 +1597,7 @@ h2, h3, h4, h5 {
 }
 
 .detail-product .container .row .info-product {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .detail-product .container .row .info-product h3 {
   font-size: 25px;
@@ -1708,7 +1708,7 @@ h2, h3, h4, h5 {
 
 @media screen and (max-width: 768px) {
   .detail-product .container .row .info-product {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .detail-product .container .row .info-product h3 {
     font-size: 25px;
@@ -1743,6 +1743,78 @@ h2, h3, h4, h5 {
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
+  }
+  .tab-view {
+    padding-top: 20px !important;
+  }
+  .tab-view .container .row .tab-wrapper h3 {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .tab-view .container .row .tab-content p {
+    line-height: 25px;
+  }
+  .tab-view .container .row .product-review .review-wrapper ul {
+    padding-left: 10px;
+  }
+  .tab-view .container .row .product-review .review-wrapper ul li {
+    list-style: none;
+  }
+  .tab-view .container .row .product-review .review-wrapper ul li span {
+    color: #ff9f18;
+    font-weight: 600;
+  }
+  .tab-view .container .row .product-review .review-wrapper ul li p {
+    margin: 5px 0 20px;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review form .form-group {
+    margin-bottom: 25px;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review form .form-group span {
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    font-size: 18px;
+    color: #ff9f18;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review form .form-group input, .tab-view .container .row .product-review .review-wrapper .form-review form .form-group textarea {
+    width: 100%;
+    border: 1px solid #091d2e;
+    border-radius: 5px;
+    padding: 8px 20px;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review form .form-group input:focus, .tab-view .container .row .product-review .review-wrapper .form-review form .form-group textarea:focus {
+    outline: none;
+  }
+  .tab-view .container .row .product-review .review-wrapper .form-review form .btn-review {
+    background-color: #091d2e;
+    padding: 8px 30px;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .tab-view .container .row .item-product-kategory {
+    margin-top: 50px;
+  }
+  .tab-view .container .row .item-product-kategory h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
 }
 @font-face {

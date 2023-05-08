@@ -8,7 +8,7 @@ h2,h3,h4,h5 {
 	.container {
 		.row {
 			.info-product {
-				margin-top: 80px;
+				margin-top: 60px;
 				h3 {
 					font-size: 25px;
 					margin-bottom: 15px;
@@ -146,7 +146,7 @@ h2,h3,h4,h5 {
 			.row {
 				
 				.info-product {
-					margin-top: 80px;
+					margin-top: 50px;
 					h3 {
 						font-size: 25px;
 						margin-bottom: 15px;
@@ -189,4 +189,90 @@ h2,h3,h4,h5 {
 			}
 		}
 	} 
+
+	.tab-view {
+		padding-top: 20px !important;
+		.container {
+			.row {
+				.tab-wrapper {
+					h3 {
+						font-size: 18px;
+						font-weight: 500;
+						cursor: pointer;
+					}
+				}
+				.tab-content {
+					p {
+						line-height: 25px;
+					}
+				}
+				.product-review {
+					.review-wrapper {
+						ul {
+							padding-left: 10px;
+							li {
+								list-style: none;
+								span {
+									color: #ff9f18;
+									font-weight: 600;
+								}
+								p {
+									margin: 5px 0 20px;
+								}
+							}
+						}
+						.form-review {
+							width: 70%;
+							margin: auto;
+							margin-top: 50px;
+							h3 {
+								font-size: 20px;
+								font-weight: 600;
+								margin-bottom: 30px;
+							}
+							form {
+								.form-group {
+									margin-bottom: 25px;
+									span {
+										line-height: 0;
+										display: flex;
+										align-items: center;
+										cursor: pointer;
+										column-gap: 5px;
+										font-size: 18px;
+										color: #ff9f18;
+									}
+									input, textarea {
+										width: 100%;
+										border: 1px solid $mainColor;
+										border-radius: 5px;
+										padding: 8px 20px;
+										&:focus {
+											outline: none;
+										}
+									}
+								}
+								.btn-review {
+									background-color: $mainColor;
+									padding: 8px 30px;
+									border: 0;
+									color: #fff;
+									font-weight: 600;
+									border-radius: 5px;
+								}
+							}
+						}
+					}
+				}
+				.item-product-kategory {
+					margin-top: 50px;
+					h3 {
+						font-size: 23px;
+						font-weight: 600;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
 }
