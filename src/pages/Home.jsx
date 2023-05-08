@@ -17,6 +17,7 @@ import BestFurniture from "../components/BestFurniture";
 import Testimoni from "../components/Testimoni";
 
 const Home = () => {
+
   const [bestSallerProduct, setBestSallerProduct] = useState([]);
 
   useEffect(() => {
