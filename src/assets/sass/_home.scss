@@ -345,8 +345,6 @@ p {
 	}
 } 
 
-
-
 @include responsive(mobile) {
 
 	.sect-herro-banner {
@@ -368,7 +366,7 @@ p {
 							font-weight: 500;
 						}
 						h3 {
-							font-size: 30px;
+							font-size: 30px !important;
 							margin: 20px 0;
 							font-weight: 600;
 						}

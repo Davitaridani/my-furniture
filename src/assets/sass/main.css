@@ -1,6 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap");
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 @font-face {
   font-family: "apercu";
   src: url("../img/font/font-apercu.woff2");
@@ -600,7 +668,7 @@ p {
     font-weight: 500;
   }
   .sect-herro-banner .container .row .content-banner .hero-content h3 {
-    font-size: 30px;
+    font-size: 30px !important;
     margin: 20px 0;
     font-weight: 600;
   }
@@ -1020,6 +1088,67 @@ section {
   padding: 0 0 70px;
 }
 
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 .sect-1-cart .container .row .table tr td img {
   padding: 4px;
   width: 100px;
@@ -1053,6 +1182,67 @@ section {
   margin-bottom: 10px;
 }
 
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 .items-card-products {
   margin-bottom: 15px;
 }
@@ -1138,6 +1328,67 @@ section {
     border-radius: 50px;
   }
 }
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 .sect-info-pembayaran .container .row form .form-group .form-control {
   border: 1px solid #091d2e !important;
   border-radius: 0;
@@ -1176,6 +1427,67 @@ section {
   padding: 5px 0;
 }
 
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 h2, h3, h4, h5 {
   color: #091d2e;
 }
@@ -1287,6 +1599,67 @@ h2, h3, h4, h5 {
   margin-bottom: 20px;
 }
 
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 .common-section {
   background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url("../img/banner-products.jpg") no-repeat center center;
   background-size: cover;
@@ -1302,6 +1675,67 @@ h2, h3, h4, h5 {
   font-weight: 600;
 }
 
+@font-face {
+  font-family: "apercu";
+  src: url("../img/font/font-apercu.woff2");
+}
+p, button, span, li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-custom {
+  background-color: #39427B;
+  padding: 8px 16px;
+}
+
+h1, h2, h2, h3, h4, h5 {
+  font-family: "apercu";
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.text-title {
+  color: #091d2e;
+  font-weight: 600;
+}
+
+::-moz-selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+::selection {
+  background-color: #39427B;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 27px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+}
 .footer {
   padding: 80px 0 15px;
   background-color: #091d2e;

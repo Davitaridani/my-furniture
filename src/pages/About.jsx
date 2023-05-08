@@ -24,7 +24,7 @@ const About = () => {
 								<span>
 									<iconify-icon icon="ic:round-format-quote" flip="horizontal"></iconify-icon>
 								</span>
-								<h1 className="text-center">Indonesian Family Furniture</h1>
+								<h1 className="text-center">Indonesia Family Furniture</h1>
 								<span>
 									<iconify-icon icon="ic:round-format-quote" rotate="180deg" flip="horizontal"></iconify-icon>
 								</span>
@@ -33,7 +33,6 @@ const About = () => {
 								<img src={imgAbout} alt="About" />
 							</figure>
 						</Col>
-
 						<Col md="7">
 							<div className="text-about">
 								<h1>My Furniture</h1>
@@ -45,7 +44,6 @@ const About = () => {
 							</div>
 						</Col>
 					</Row>
-
 					<Row className="visi-misi mt-5 justify-content-center gap-3">
 						<Col md="5">
 							<img src={iconVisi} alt="Visi" />

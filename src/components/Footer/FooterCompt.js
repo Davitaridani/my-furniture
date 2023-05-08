@@ -16,8 +16,7 @@ const FooterCompt = () => {
             </div>
             <p className="text-footer text-white">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-              harum suscipit impedit facere ex fugiat necessitatibus cum at
-              ullam aliquam.
+              harum suscipit impedit facere ex fugiat.
             </p>
           </Col>
           <Col lg="3">

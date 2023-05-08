@@ -1,8 +1,5 @@
-@use "global";
-$mainColor : #091d2e;
-$bgBlue: #bbe5ed;
+@import "global";
 
-// Navbar Sticky
 .header-sticky {
 	width: 100%;
 	height: 70px;
@@ -64,10 +61,6 @@ $bgBlue: #bbe5ed;
 		}
 		.nav-icons {
 			column-gap: 20px;
-				
-			// .icon-heart {
-			// 	position: relative;
-			// }
 			span {
 				font-size: 20px;
 				color: $mainColor;
@@ -108,34 +101,8 @@ $bgBlue: #bbe5ed;
 	}
 }
 
-// Responsive
-@mixin responsive($breakpoint) {
-	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==notebook {
-		@media screen and (min-width: 980px) and (max-width: 1024px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==leptop {
-		@media screen and (min-width: 1025px) and (max-width: 1280px) {
-			@content;
-		}
-	}
-}
-
-// Mobile
 @include responsive(mobile) {
 
-	// Navbar Sticky
 	.header-sticky {
 		width: 100%;
 		height: 60px;
@@ -148,7 +115,6 @@ $bgBlue: #bbe5ed;
 		background: rgba(255, 255, 255, 70%);
 	}
 
-	// Navbar
 	.header {
 		width: 100%;
 		height: 60px;
@@ -192,9 +158,6 @@ $bgBlue: #bbe5ed;
 					align-items: center;
 					justify-content: center;
 				}
-				// .nav-item {
-				// 	display: block !important;
-				// }
 			}
 			.nav-icons {
 				span {

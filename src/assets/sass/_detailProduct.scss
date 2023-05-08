@@ -1,8 +1,4 @@
-@use "global";
-
-$mainColor : #091d2e;
-$bgBlue: #c2e8ef;
-$bgCard : #f8f0e4; 
+@import "global";
 
 h2,h3,h4,h5 {
 	color: $mainColor;

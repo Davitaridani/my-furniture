@@ -1,9 +1,4 @@
-@use "global";
-
-$mainColor : #091d2e;
-$bgBlue: #c2e8ef;
-$bgCard : #f8f0e4; 
-
+@import "global";
 
 .common-section {
 	background: linear-gradient(rgba(0,0,0, 0.562), rgba(0,0,0, 0.562)), url("../img/banner-products.jpg") no-repeat center center;
